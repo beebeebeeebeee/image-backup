@@ -1,0 +1,36 @@
+{
+  "name": "image-backup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder --mac --x64"
+  },
+  "keywords": [],
+  "author": "Bee Mak",
+  "license": "ISC",
+  "build": {
+    "appId": "com.filemover.app",
+    "mac": {
+      "target": ["dmg", "zip"]
+    },
+    "win": {
+      "target": ["nsis", "zip"]
+    }
+  },
+  "devDependencies": {
+    "electron": "^12.0.7",
+    "electron-builder": "^22.10.5"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.3",
+    "bootstrap": "^5.0.1",
+    "drivelist": "^9.2.4",
+    "fs": "0.0.1-security",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "image-extensions": "^1.1.0",
+    "lowdb": "^1.0.0"
+  }
+}
